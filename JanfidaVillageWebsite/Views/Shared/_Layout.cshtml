@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("head", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <img src="~/Content/Images/janfidaphoto5.png" alt="Ջանֆիդա" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="~/Home/Index" class="cool-link">Գլխավոր</a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Description" class="cool-link">Նկարագրություն</a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Agriculture" class="cool-link">Գյուղատնտեսություն</a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Places" class="cool-link">Հետաքրքիր վայրեր</a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Contact" class="cool-link">Կապ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    
+    <footer class="container-fluid">
+        <p>Janfida village &copy; @DateTime.Now.Year </p>
+    </footer>
+</body>
+</html>

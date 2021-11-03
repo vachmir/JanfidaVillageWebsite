@@ -1,0 +1,206 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #3399FF;
+}
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 4px 6px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: floralwhite;
+            color: red;
+        }
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #2C3A47;
+    border: #2C3A47;
+    border-radius: 0 0 5px 5px;
+    z-index: 10;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+/*header menu items */
+.selected-active {
+    background: #426382;
+    color: #fff;
+    font-weight: 900;
+}
+
+.menuItems:hover {
+    border-left: 1px solid #4c535a;
+    border-right: 1px solid #4c535a;
+    background-color: #426382
+}
+
+
+h1 {
+    font-size: 75px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none
+}
+
+p {
+    color: black;
+    display: grid;
+}
+
+
+/*content(body)*/
+
+.main {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.content-list {
+    width: 314px;
+    float: left;
+}
+
+#story {
+    margin-top: -320px;
+    margin-left: 40px;
+    float: left;
+    align-items: center;
+    align-content: flex-start;
+    display: grid;
+    grid-template-columns: 50% 40%;
+}
+
+.mapsImg {
+    float: right;
+    position: relative;
+    right: 80px;
+    margin-top: 1px;
+}
+
+    .mapsImg h3 {
+        text-align: center;
+        color: blueviolet;
+    }
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    float: inherit;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid #ccc;
+    float: left;
+    width: 250px;
+}
+
+    div.gallery:hover {
+        border: 5px solid;
+        color: coral;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+desc {
+    padding: 5px;
+    text-align: center;
+}
+
+.content p {
+    float: left;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 15%;
+    margin-top: 1px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 15px;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 50px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.titles_first {
+    font-size: 40px;
+    color: tomato;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.titles_second {
+    font-size: 90px;
+    text-align: center;
+    color: brown;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
